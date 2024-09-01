@@ -40,8 +40,8 @@ const JobSetup = () => {
                     salary: job.salary || "",
                     location: job.location || "",
                     jobType: job.jobType || "",
-                    experienceLevel: job.experienceLevel || "",
-                    noOfPositions: job.noOfPositions || "",
+                    experience: job.experience || "",
+                    position: job.position || "",
                 });
             }
         }
@@ -65,8 +65,8 @@ const JobSetup = () => {
         formData.append("salary", input.salary);
         formData.append("location", input.location);
         formData.append("jobType", input.jobType);
-        formData.append("experienceLevel", input.experienceLevel);
-        formData.append("noOfPositions", input.noOfPositions);
+        formData.append("experience", input.experience);
+        formData.append("position", input.position);
         if (input.file) {
             formData.append("file", input.file);
         }
