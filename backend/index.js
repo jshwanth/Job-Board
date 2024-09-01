@@ -19,7 +19,7 @@ app.use(cookieParser());
 
 // Manually setting CORS headers
 app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:5173'); // Allow your frontend URL
+    res.header('Access-Control-Allow-Origin', process.env.URL); // Allow your frontend URL
     res.header('Access-Control-Allow-Credentials', 'true'); // Allow credentials (like cookies)
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept'); // Allow specific headers
     res.header('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS'); // Allow specific methods
