@@ -10,7 +10,7 @@ const Footer = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between md:items-start items-center space-y-8 md:space-y-0">
         {/* Logo */}
         <div className="flex flex-col items-center md:items-start">
-          <img src="/public/logo.png" alt="Job Board Logo" className="h-40 w-40 mb-4 bg-transparent" />
+          <img src="/logo.png" alt="Job Board Logo" className="h-40 w-40 mb-4 bg-transparent" />
         </div>
 
         {/* Company, Resources, and Get in Touch in a single row on larger screens */}
